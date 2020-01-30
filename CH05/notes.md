@@ -64,3 +64,31 @@ for eg.
 ##be the jvm 
 13 15 x = 6
 cause the value of the y was coming 13
+
+##crossword
+Across
+6.extreme
+17.element
+18.variable
+26.random
+28.parseint
+29.break
+Down
+8.loop
+14.iteration
+23.post
+26.run
+27.pre
+
+##after looking at the answers
+fancy computer word for the build is implement ...okay
+pre i kno
+for is a  multi part loop wow
+ohhh prepecodeequ is psudo code...my bad english
+change is cassssst???
+the big toolkit api?? didnt get it
+integer???????/
+booolean is uncastableeee how could i forgettttt
+expression lohl
+java.io is talkative packgae good to know
+as if...virtual..what??
