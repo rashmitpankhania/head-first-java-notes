@@ -32,3 +32,26 @@ get the location as integer araay in assigned it to locationCells
 return
 
 #test code for the methods
+in the SimpleDotGame class
+
+##sharpen your pencil
+some things which we are missing in the code is that we are that
+1. we are not testing all the three cells
+2. not handling the proper user input that shoudl check if it is an integer or not
+
+## sharpen your pencil: prep code for the main()
+declare numOfGuesses int initailize it to zero
+declare an array int[] locationCells
+int startingLocation be a randomNumber between 0 and 4
+another two locations will be obtained by adding one and two
+so locationcells array is ready
+initialize the SimpleDotGame object
+set the locationCells
+run the while loop in infinity mode
+ask the user to input
+store the output in result
+increment the numOfGuesses
+check if the result is kill and if it is then break
+else repeat
+show the numOfguesses
+
