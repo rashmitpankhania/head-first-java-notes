@@ -1,6 +1,6 @@
 public class SimpleDotGameTestDrive {
 	public static void main(String[] args){
-		SimpleDot d = new SimpleDot();
+		SimpleDotGame d = new SimpleDotGame();
 		int[] locationCells = {2, 3, 7};
 		d.setLocationCells(locationCells);
 		String userInput = "2";
@@ -9,4 +9,6 @@ public class SimpleDotGameTestDrive {
 			System.out.println("passed");
 		else
 			System.out.println("failed");
+	}
+}
 
