@@ -55,3 +55,12 @@ check if the result is kill and if it is then break
 else repeat
 show the numOfguesses
 
+
+##note
+one important thing to note about is the casting of the  data types
+that is the casting works only one way that a data type with the small size can be casted into the datatype with larger size
+for eg. 
+
+##be the jvm 
+13 15 x = 6
+cause the value of the y was coming 13
