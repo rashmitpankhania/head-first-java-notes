@@ -15,4 +15,22 @@ the story about the javax is so good
 an import statement saves you from typing
 
 one basic  thing and important thing is THE DOCUMENTATION
-it helps everyone everytime and everywhere 
+it helps everyone everytime and everywhere
+
+#cross word
+Across
+1. primitive
+7. indexof
+12. add
+14. api
+16. int
+17. arraylist
+22. tacos
+23. import
+
+Down
+2. method
+3. element
+4. short
+11. contains 
+18. list
