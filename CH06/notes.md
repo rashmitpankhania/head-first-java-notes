@@ -9,4 +9,10 @@
 7. as long as dot com is not empty
 8. getUserInput
 9. call checkuser guess method
-10. call finish game method 
+10. call finish game method
+
+the story about the javax is so good
+an import statement saves you from typing
+
+one basic  thing and important thing is THE DOCUMENTATION
+it helps everyone everytime and everywhere 
