@@ -54,4 +54,27 @@ hm a good question i think...if a superclass wants to use the subclass versionof
 and btw the song Capital Cities - Safe and Sound is really good
 
 whoa didnt know that private members cannot be inherited thats really important
-four different access modifiers are there : private default protected public not three 
+four different access modifiers are there : private default protected public not three
+
+##polymorphism in action
+i wasnt knowing that the reference of the super classs can point or can have the ibject of the subclass thats freaking awsome
+and we can also make methods like that in which object reference is send in the argument and later we can send the objects of subclass
+
+the king adevantage
+***i can write code with polymorphism and the code wont change if new subclasses are added***
+
+this lesson is surelly a lot of things
+1. a class can never be private but it can be non public like package protected that is by default
+2. with the help of access modifier **final** we can stop the inheritance of the particular class
+3. if the classs has private constructors then also it cannot be inherited
+
+final class is something that you are always sure the method will work your way only and you dony want toget it overriden
+
+important thing to note is the methodis a contract that the arguments and return typr should look like exacty same as superclass
+one really important thig is that the compiler looks for the refernec when inc=voking the method but the jvm need ths actual object to run the method
+so if both the method are not same then the actual one willnot get called
+
+an overloaded method has nothing to do with the inheritance and polymorphism and its just the differne t method with the same name
+
+#be the compiler
+the answer would be i guess number ***1*** 
