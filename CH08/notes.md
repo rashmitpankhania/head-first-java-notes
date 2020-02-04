@@ -32,3 +32,5 @@ an abstract class inheriting from the abstract class can have abstract methods a
 11. Golf club as abstract in golf game and as concrete in store data
 12. Carburetor as abstract in mechanic simulation and as concrete in Car ecommerce application
 13. Oven as abstract in Bakery kind of application and as kitchen model
+
+WHOAAh!! **class OBJECT is the mother of all the classes its super class of everything in this knwon and unknown universe**
