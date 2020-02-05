@@ -7,6 +7,9 @@ public class MyAnimalTestDrive {
 
 		m.add(marcus);
 		m.add(kathy);
+
+		kathy = (Cat) m.animals[1];
+		kathy.mew();
 		System.out.println(m.animals[1].getClass());
 	}
 }

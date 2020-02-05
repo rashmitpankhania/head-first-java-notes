@@ -34,3 +34,41 @@ an abstract class inheriting from the abstract class can have abstract methods a
 13. Oven as abstract in Bakery kind of application and as kitchen model
 
 WHOAAh!! **class OBJECT is the mother of all the classes its super class of everything in this knwon and unknown universe**
+
+when an object is refrenced by the variable of type of Object class, it can't be assigned to actual variable declared with actual type
+
+**Roses are re,  violets are blue
+extend only one, implement two**
+
+#bullet points
+1. when you dont want the clas to be instantiated just make it ***abstract***
+2. an abstract class can have both abstract and non abstract methods
+3. if the class has even one abstract method whole class must be marked abstract
+4. an abstract method has no body
+5. all abstract methods must be implemented in first and latter subclasses
+6. Every class in java is either dirct or indirect subclass of class *Object*
+7. to invoke the superclass version of the method use *super* keyword
+
+#Whats the decalaration
+1.
+public class Click{}
+public class Clack extends Click{}
+
+2.
+public abstract class Top{}
+public class Tip extends Top{}
+
+3.
+public abstract class Fee{}
+public abstract class Fi extends Fee{}
+
+4.
+public interface Foo{}
+public class Bar implements Foo{}
+public class Baz extends Bar{}
+
+5.
+public interface Zeta{}
+public class Alpha implements Zeta{}
+public interface Beta{}
+public class Delta extends Alpha implements Beta{}
