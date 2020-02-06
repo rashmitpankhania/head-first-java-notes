@@ -27,8 +27,63 @@ ooooooh...and we dont have to write the constructor...obvio we can but if we don
 
 owww so we can write our own like that
 
-##Sharpen your pencil
+## Sharpen your pencil
 1. for sure the counter to see how many objects 
 2. create has -a objects
 3. assign values to the objects instance variable
 
+## shapren your pencil
+1. Duck(density. weightt) --> Duck(float d, int w)
+2. Duck(name, feathers) --> Duck(String s, long[])
+3. Duck(canFly) --> Duck(boolean b)
+4. Duck(3.3F, airspeed) --> 1. one
+5. Duck(airspeed, denstiy) --> Duck(int a, float b)
+
+## TANDQ
+its really a good question that marking the constructor private what would happen them
+
+so i get it whenever we say **new** or call it the whole **Chain reaction** starts of calling the constructors and yes the abstract class also have the constructors even though we cannont call the new on that particular class
+
+The above process is called **Constructor Chaining**
+
+its really nice the way we thought of the next situationa and voila the next topic is that only
+
+## SYP
+A first animal then hippo
+
+the superclass part of the object has to be fully formed before constructng the subclass object
+
+if we dont call the super constructor then its fine the compiler will call itself or put it in the code
+but if we explicitly define a super constructor then it has to be the first statment in the constructor otherwise it wont compile
+
+if the super class needs any arguments to make the object then we can send the arguments in the *super(args)* also which will eventually be forwarded to the superclass
+
+## sharpen your pencil
+1. public SonOfBoo(String a, String b, String c) {
+super(a,b);
+}
+
+2. public SonOfBoo(int i, int x, int y) {
+super(i, “star”);
+}
+
+3. public SonOfBoo(int i, String s) {
+}
+
+life of an variable depends on whether its a local variable or instance variable
+
+Suppose the local variable is in the method A and the method A calls the method B then the *life* of the variable is still alive but *scope* is not there when the method b completes the execution the the *scope* comes in it 
+
+if you want to get rid of the object refernece just make it *null* like
+*Object a = new Object();
+a = null*
+
+# ways of object killing
+1. Reference goes out of scope
+2. assigning it the another object
+3. explicity setting it to *null*
+
+
+yehhhhhhh **FIRESIDE CHATS**
+
+wow local variables are also calles wait...local(obvio), stack, automatic, scope-challenged
