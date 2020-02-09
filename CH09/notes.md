@@ -87,3 +87,20 @@ a = null*
 yehhhhhhh **FIRESIDE CHATS**
 
 wow local variables are also calles wait...local(obvio), stack, automatic, scope-challenged
+
+## Exercise
+i belive 2, 4, 6, 7, 8
+
+## Exercise Popular objects
+honey.obj <- {honeypot, ha0, ha1, ha2, ha3, beeha0, beeha1, beeha2 ,beeha3, bahunny0, bahunny1, bahunny2, bahunny3, bahunny4, kitkh}
+Bees.obj <- {b1}
+bear.obj <- ba0
+bear.obj <- ba1
+bear.obj <- ba2
+bear.obj <- ba3
+bear.obj <- ba4
+kit.obj <- kit, r.k
+racoon.obj <- r
+
+## five minute mystery
+alist = {V2Radditor, V2Radditor, V2Radditor, V2Radditor, V2Radditor, V2Radditor, V2Radditor, V2Radditor, V2Radditor, V2Radditor, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditorr, V3Radditor, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot, RetentionBot}
