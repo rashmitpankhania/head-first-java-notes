@@ -41,8 +41,45 @@ class MusicTest1 {
         }
         System.out.println("we got an sequncer");
     }
+
+    public void play(int i, int n){
+        System.out.println(i+n);
+        try {
+            Sequencer player = MidiSystem.getSequencer();
+            player.open();
+
+            Sequence seq = new Sequence(Sequence.PPQ, 4);
+            Track t = seq.createTrack();
+
+            ShortMessage mes = new ShortMessage();
+            mes.setMessage(ShortMessage.PROGRAM_CHANGE, 1, i, 0);
+            MidiEvent eve = new MidiEvent(mes, 1);
+            t.add(eve);
+
+            mes = new ShortMessage();
+            mes.setMessage(ShortMessage.NOTE_ON, 1, n, 100);
+            MidiEvent ev = new MidiEvent(mes, 1);
+            t.add(ev);
+
+            mes = new ShortMessage();
+            mes.setMessage(ShortMessage.NOTE_OFF, 1, n, 100);
+            ev = new MidiEvent(mes, 16);
+            t.add(ev);
+
+            player.setSequence(seq);
+            player.start();
+//            player.stop();
+
+        } catch (MidiUnavailableException | InvalidMidiDataException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
+    }
+
     public static void main(String[] args) {
         MusicTest1 s = new MusicTest1();
-        s.play();
+        int inst = Integer.parseInt(args[0]);
+        int not = Integer.parseInt(args[1]);
+        s.play(inst, not);
     }
 }
