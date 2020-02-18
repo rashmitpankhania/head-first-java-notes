@@ -66,3 +66,36 @@
  
  f f t t t t f t t f t f f f f t f
  
+ ## java cross 7.0
+ # across
+ 1. assignment
+ 4. // popped
+ 6. subclass
+ 8. invoke
+ 10. ----a---- // hierarchy
+ 13. handle
+ 15. exceptions
+ 18. --y---- // keyword
+ 20. --e- // tree
+ 21. duck
+ 24. int
+ 25. -l---i--- // algorithm
+ 27. --r--- // throws
+ 28. concrete
+ 29. // new
+ # down
+ 2. s---- // scope
+ 3. instance
+ 4. --i-a-- // private
+ 5. // math
+ 7. state
+ 9. class
+ 11. -------i--- // instantiate
+ 12. ------d // checked
+ 14. try
+ 16. inherit
+ 17. setter
+ 19. declare
+ 22. catch
+ 23. // throw
+ 26. // isa
