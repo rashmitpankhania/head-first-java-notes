@@ -62,3 +62,7 @@
  2. duck it by *throws XYZException*
  
  _try_ _catch_ and _finally_
+ ## true or false exercise
+ 
+ f f t t t t f t t f t f f f f t f
+ 
