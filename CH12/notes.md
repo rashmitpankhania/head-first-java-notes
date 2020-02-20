@@ -48,3 +48,4 @@ to draw a jpeg construc a jpecg and use drawImage method
 use the Grpahics2d object which is subclass of graphics you can get it back by casting
 
     Graphics2D g2d = (Graphics2D) g;  
+now the important part comes how do you put more than one object in the frame

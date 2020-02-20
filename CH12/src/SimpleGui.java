@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -16,11 +17,11 @@ public class SimpleGui implements ActionListener, ItemListener {
     public void go() {
         button = new JButton("click kar");
         mypanel = new MyDrawPanel();
-        mypanel.add(button);
         JFrame frame = new JFrame();
         button.addActionListener(this);
         button.addItemListener(this);
-        frame.getContentPane().add(mypanel);
+        frame.getContentPane().add(BorderLayout.SOUTH, button);
+        frame.getContentPane().add(BorderLayout.CENTER, mypanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
         frame.setVisible(true);
@@ -28,6 +29,7 @@ public class SimpleGui implements ActionListener, ItemListener {
 
     public void actionPerformed(ActionEvent actionEvent) {
         button.setText("i m pressed");
+        mypanel.repaint();
     }
 
     @Override

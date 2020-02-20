@@ -15,7 +15,7 @@ public class MyDrawPanel extends JPanel {
     public void paintComponent(Graphics g) {
         // it create the rectangle
 //        g.setColor(Color.ORANGE);
-//        g.fillRect(0, 0, this.getWidth(), this.getHeight());
+        g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
         // it adds the image to the panel and yes use absolute path
 //        Image image = new ImageIcon("/home/rashmit/Github/head-first-java-notes/CH12/src/sample.jpg").getImage();
