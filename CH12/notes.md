@@ -49,3 +49,8 @@ use the Grpahics2d object which is subclass of graphics you can get it back by c
 
     Graphics2D g2d = (Graphics2D) g;  
 now the important part comes how do you put more than one object in the frame
+
+## inner class
+one important advantage of the inner class is that we can have multiple implementations of the same methods many times
+
+one more important is that anytime time we want a separate class but still want that class to be part of the another class just make inner class
