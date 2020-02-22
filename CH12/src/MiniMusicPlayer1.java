@@ -1,18 +1,30 @@
 import javax.sound.midi.*;
+import javax.swing.*;
 
-class MiniMusicPlayer1 implements ControllerEventListener{
+class MiniMusicPlayer1 {
+    static JFrame frame = new JFrame("My First Animation Panel");
+    static MyAnimationPanel myAnimationPanel;
+
     public static void main(String[] args) {
         MiniMusicPlayer1 miniMusicPlayer1 = new MiniMusicPlayer1();
         miniMusicPlayer1.go();
     }
 
+    public void setupGui(){
+        myAnimationPanel = new MyAnimationPanel();
+        frame.setContentPane(myAnimationPanel);
+        frame.setBounds(30, 30, 300, 300);
+        frame.setVisible(true);
+    }
+
     public void go() {
+        setupGui();
         try {
             Sequencer sequencer = MidiSystem.getSequencer();
             sequencer.open();
 
             int[] eventArray = {127};
-            sequencer.addControllerEventListener(this, eventArray);
+            sequencer.addControllerEventListener(myAnimationPanel, eventArray);
 
             Sequence sequence = new Sequence(Sequence.PPQ, 4);
             Track track = sequence.createTrack();
@@ -40,10 +52,5 @@ class MiniMusicPlayer1 implements ControllerEventListener{
             e.printStackTrace();
         }
         return new MidiEvent(message, tick);
-    }
-
-    @Override
-    public void controlChange(ShortMessage shortMessage) {
-        System.out.println("la");
     }
 }
