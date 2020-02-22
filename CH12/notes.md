@@ -54,3 +54,7 @@ now the important part comes how do you put more than one object in the frame
 one important advantage of the inner class is that we can have multiple implementations of the same methods many times
 
 one more important is that anytime time we want a separate class but still want that class to be part of the another class just make inner class
+
+this book is getting more and more exciting and i loved it
+
+a good way to make software is divide it into smaller versions
