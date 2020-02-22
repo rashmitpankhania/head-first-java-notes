@@ -58,3 +58,26 @@ one more important is that anytime time we want a separate class but still want 
 this book is getting more and more exciting and i loved it
 
 a good way to make software is divide it into smaller versions
+
+
+## sharpen your pencil
+i m sick :(
+
+swing ? // Jframe
+listener
+handling // actionperformed
+setSize
+paintComponent
+event
+mouse click, or scroll // swing component
+event object
+event source
+by implementing its methods //addeventlistener
+paintCompoennt
+inner class
+Graphics2d
+repaint()
+javax.swing
+
+## be the compiler
+it will not compiler becaus ethe addaction listener method take the argument of the listener object
