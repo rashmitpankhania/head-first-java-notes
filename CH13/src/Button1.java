@@ -21,6 +21,11 @@ public class Button1 {
         panel.add(button);
         panel.add(buttonTwo);
         panel.add(buttonThree);
+        JPanel centerPanel = new JPanel();
+        centerPanel.add(new JTextField("name likh bhsodik"));
+        centerPanel.setBackground(Color.cyan);
+        frame.getContentPane().add(BorderLayout.CENTER, centerPanel);
+
         frame.setSize(300,300);
         frame.setVisible(true);
     }

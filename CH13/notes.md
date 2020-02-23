@@ -58,3 +58,11 @@ i totally get the working of the borderlayout
 
 ## sharpen your pencil
 i think all three will lined side by side each other
+
+## there are no dumb qquestions
+cool we can set the content pane of the fram by using our panel
+    
+    frame.setContentPane(panel);
+we can put compoent by ourselves also but it will be a long run to hard code everuthong
+    
+    panel.setLayout(null);
