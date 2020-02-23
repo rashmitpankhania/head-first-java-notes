@@ -55,3 +55,6 @@ i guess about the height i think it take the 100% of the window or the size allo
 and the factor are otally depend an the compoent in which it is stored
 
 i totally get the working of the borderlayout
+
+## sharpen your pencil
+i think all three will lined side by side each other
