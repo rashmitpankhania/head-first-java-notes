@@ -66,3 +66,28 @@ cool we can set the content pane of the fram by using our panel
 we can put compoent by ourselves also but it will be a long run to hard code everuthong
     
     panel.setLayout(null);
+
+listening to You & me - One Direction
+
+## Exercise
+1-C
+2-D
+6-B
+4-A
+3-E
+
+## GUI Cross
+across
+11. event
+15. flow
+23. checkbox
+26. actionlistener
+down
+2. 
+5. --n-
+8. -e--------
+13. -o----
+14. ------c-
+18. ----o-
+24. east
+
