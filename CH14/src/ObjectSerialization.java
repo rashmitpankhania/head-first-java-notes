@@ -5,8 +5,9 @@ public class ObjectSerialization implements Serializable {
 
     public static void main(String[] args) {
         ObjectSerialization obj = new ObjectSerialization();
+        obj.name = "Rashmit";
         try {
-            FileOutputStream fs = new FileOutputStream("my.sr");
+            FileOutputStream fs = new FileOutputStream("my.pdf");
             ObjectOutputStream os = new ObjectOutputStream(fs);
             os.writeObject(obj);
             os.close();
@@ -17,5 +18,6 @@ public class ObjectSerialization implements Serializable {
             e.printStackTrace();
             System.out.println("ye kuch or ha");
         }
+        System.out.println(obj.name);
     }
 }
