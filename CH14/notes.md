@@ -24,3 +24,7 @@ if two objects point at the same refrence then the serialoized dont create it ag
 
 Deserialization
 example done and yeah i accidently check the transient keyword also :x
+
+now will be learning about writing to file
+
+bufferedreader and bufferedwriter is mmuch more efficient as it stores the data in it will only go back to the file to read only when the buffere  is empty
