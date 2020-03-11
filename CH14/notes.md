@@ -28,3 +28,22 @@ example done and yeah i accidently check the transient keyword also :x
 now will be learning about writing to file
 
 bufferedreader and bufferedwriter is mmuch more efficient as it stores the data in it will only go back to the file to read only when the buffere  is empty
+
+## serializable or not
+1. Object is serializable but i think one should not because every frking class inherits it
+2. Strings are also serializable and i think one can
+3. File are also serilizale but one can not or should not because they are created at runtime
+4. Date are good serizliazle and nothing to worry about them
+5. OutPutstream is not good for serilizable because gain truntime thingy
+6. JFrame is not seriazble i guess becaus eit deals with direct system os
+7. Integer yeag good to go
+8. Sytrem hell nooo!!
+
+
+## compile or not
+first one i think will not cimpiel
+second will compile with nno problem
+last one will not compile cause inputstream cannot be chained with ouput vice versa
+
+## true or false
+f f t f f f f t f t t t t f t f f 
