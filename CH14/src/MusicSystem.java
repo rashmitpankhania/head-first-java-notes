@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 import java.util.ArrayList;
 
 public class MusicSystem {
@@ -35,6 +36,7 @@ public class MusicSystem {
 
         checkBoxes = new ArrayList<>();
 
+        // button box start
         Box buttonBox = new Box(BoxLayout.Y_AXIS);
 
         JButton start = new JButton("Start");
@@ -53,11 +55,20 @@ public class MusicSystem {
         downTempo.addActionListener(new MyDownTempoListener());
         buttonBox.add(downTempo);
 
+        JButton saveTune = new JButton("Save Tune");
+        saveTune.addActionListener(new SaveTuneListener());
+        buttonBox.add(saveTune);
+
+        JButton restoreTune = new JButton("Restore Tune");
+        restoreTune.addActionListener(new RestoreTuneListener());
+        buttonBox.add(restoreTune);
+
         Box nameBox = new Box(BoxLayout.Y_AXIS);
         for (String instrument : instruments) {
             nameBox.add(new Label(instrument));
         }
 
+        // button box ends
         background.add(BorderLayout.EAST, buttonBox);
         background.add(BorderLayout.WEST, nameBox);
 
@@ -99,6 +110,50 @@ public class MusicSystem {
             sequencer.setTempoInBPM(120);
         } catch (MidiUnavailableException | InvalidMidiDataException e) {
             e.printStackTrace();
+        }
+    }
+
+    private class RestoreTuneListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent actionEvent) {
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.showOpenDialog(frame);
+
+            boolean[] checklist;
+            try{
+                FileInputStream f = new FileInputStream(fileChooser.getSelectedFile());
+                ObjectInputStream o = new ObjectInputStream(f);
+                checklist = (boolean[]) o.readObject();
+                for(int i=0;i<256;i++){
+                    JCheckBox checkBox = checkBoxes.get(i);
+                    checkBox.setSelected(checklist[i]);
+                }
+            }catch(IOException | ClassNotFoundException e){
+                e.printStackTrace();
+            }
+            sequencer.stop();
+            buildTrackAndStart();
+        }
+    }
+
+    private class SaveTuneListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent actionEvent) {
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.showSaveDialog(frame);
+            boolean[] checkList = new boolean[256];
+            for(int i=0;i<256;i++){
+                checkList[i] = checkBoxes.get(i).isSelected();
+            }
+
+            try{
+                FileOutputStream f = new FileOutputStream(fileChooser.getSelectedFile());
+                ObjectOutputStream os = new ObjectOutputStream(f);
+                os.writeObject(checkList);
+                os.close();
+            }catch (IOException e){
+                e.printStackTrace();
+            }
         }
     }
 
