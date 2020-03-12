@@ -27,3 +27,23 @@ false
 for a server to create you need two socket 
 1. serversocket - this scoket is the one which waits for the client sockets to connect on and thi sport remians constant
 2. normal socket after thiis connection with the server socket the connection is given to normal socket whose post is different from the server socket
+
+now we have come to exciting part of **THREADING**
+
+so exxatly
+the thread object is given the runnable object and when we start the start it does the work aka job that us given in the runnable class
+after that qwe wiull just get to learn using the runnable interface
+
+## brain barball
+first back in main
+and thgen thread paart
+
+so its goes like 
+object creation - runnable - execution
+
+and the loop usually runs between runnable and execution
+
+## The thread scheduler
+thread schedular is fuzzy we cannot change the implementations of it
+
+**write-once-run-anywhere** platform independent code
