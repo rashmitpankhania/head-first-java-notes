@@ -47,3 +47,8 @@ and the loop usually runs between runnable and execution
 thread schedular is fuzzy we cannot change the implementations of it
 
 **write-once-run-anywhere** platform independent code
+so onec the thread has done its run part then its dead so it kind of has lost it threadness
+
+concurrency ooooooh....so cool
+the one of the most important point to be note is that when an object have more than one synchronised method then the two threads can't enter into any of those method not only the same method
+because any of those method can potentially change the instance variable
