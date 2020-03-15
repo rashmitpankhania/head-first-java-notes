@@ -52,3 +52,5 @@ so onec the thread has done its run part then its dead so it kind of has lost it
 concurrency ooooooh....so cool
 the one of the most important point to be note is that when an object have more than one synchronised method then the two threads can't enter into any of those method not only the same method
 because any of those method can potentially change the instance variable
+
+Thread priorites are no guarantee they are just there to make difference in performance not to completley relying on them
