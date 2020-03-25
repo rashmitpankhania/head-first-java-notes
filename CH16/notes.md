@@ -97,4 +97,20 @@ in the constructor of the treeset use the comaparator
 
 in maps we can have duplicate vlaues but we cant have duplicate keys
 
- 
+remember absteract class that we cannot make objects about it that we cannot run constructor over it
+
+array types are checke at runtime but collection types are checked at the compile time
+
+java has a feature called wildcard
+these wildcard  dont let you change the list it like you can do with those objects but you can do that object anything
+
+## exercise
+1. i dont think it will compile
+2. second one will probab;y compile
+3. i think it will compile
+4. ofc it will compile
+5. it will also compile
+6. will also compile
+7. yes
+8. y
+9. y

@@ -22,6 +22,7 @@ public class SortMountains {
     }
 
     void go() {
+        ArrayList<Object> objects = new ArrayList<Object>();
         generateMountains();
         mnt.sort(new NameCompare());
         System.out.println(mnt);
