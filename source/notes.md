@@ -32,3 +32,74 @@ and to run finally type
         
         java -jar <your>.jar
 thats it!!
+
+one more important thing is that after you have put your class in the package you cannot run it by its short name
+
+you just have to run it by its full qualified name
+
+now here is the time to create the  jar out of the package
+
+1. make sure the structure is correct and always include the first directory in jar only usually here com
+
+2. now create the manifest file same level as the com directory and write
+			
+			Main-Class: com.rashmit.RAsh
+remember to write the fully qualified name as the jvm wont know th short name now
+
+3. now write the magical command of jar
+			
+			cd classes/
+			jar -cvmf manifest.txt newRash.jar com
+
+## sharpen your pencil
+			
+			cd source
+			javac -d ../classes/ com/rashmit/Foof.java
+
+			cd ../classes
+			jar -cvmf manifest.txt foof.jar com/rashmit/Foof.class
+
+			cd .
+			java -jar foof.jar
+
+in bonus question the javaranch.cows the name is ambigoius??
+
+one important and obvious thing - to run jar you need to have java
+
+so that was all part of the executable JARS
+
+## now it is getting more and more exituing - **java WEB START**
+oohk so its just executable JAR distributed over the browser
+
+so first time you get it one the browser after you download it becomes a stand alone java application
+
+to make java we start app you need .jnlp file **JAVA NETWORK LAUNCH PROTOCOL**
+
+## steps for making and deploying java web start app
+1. obviiously make a jar application
+
+2. make a jnlp file
+
+3. place your file in the web server(you can create simple html and make a link out of it)
+
+4. add a new mime type to your web server
+
+## whats first
+user clicks the link
+browser requests the jnlp file
+server sends the jnlp file
+browser start up the jws helper app
+helper app request the jar file
+webserver sends the jar to the jws helper app
+the jws helper app invokes the main method
+
+## true or false
+t t(f) f f t f f t t(f) f f t t t t f f f
+
+## crossword after long time
+# across
+6. wont travel-transient
+9. dont split me - atomic
+
+
+# down

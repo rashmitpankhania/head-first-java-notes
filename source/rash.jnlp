@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="http://127.0.0.1/~/home/rashmit/Github/head-first-java-notes/source">
+    <information>
+        <title>Rashmit App</title>
+        <vendor>Friction</vendor>
+        <icon href="*"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <java version="1.3+"/>
+        <jar href="rash.jar"/>
+    </resources>
+    <application-desc main-class="RAsh"/>
+</jnlp>
