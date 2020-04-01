@@ -1,4 +1,5 @@
 *.class
 .idea
-head-first-java-notes.iml
-/my.txt
+/head-first-java-notes.iml
+/out/
+CH**/CH**.iml
